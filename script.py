@@ -22,4 +22,4 @@ else:
     exit(0)
 
 if __name__ == '__main__':
-    os.system('chrome tiny.cc/rfc')
+    os.system('start chrome tiny.cc/rfc')
